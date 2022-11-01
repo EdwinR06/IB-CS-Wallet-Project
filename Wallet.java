@@ -10,4 +10,10 @@ public class Wallet {
         this.history = new ArrayList<Transaction>();
         this.owner = owner;
     }
+
+    public double getBalance() {
+        return this.balance;
+    }
+
+
 }
