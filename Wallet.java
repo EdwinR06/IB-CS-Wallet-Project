@@ -23,4 +23,14 @@ public class Wallet {
         return validFlag;
     }
 
+    public boolean addTransaction(Transaction transaction) {
+        boolean addTrans = false;
+        if(validateTransaction(transaction)) {
+            this.history.add(transaction);
+            this.balance += transaction.getAmount();
+            addTrans = true;
+        }
+        return addTrans;
+    }
+
 }
