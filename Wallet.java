@@ -4,6 +4,7 @@ public class Wallet {
     private double balance;
     private ArrayList<Transaction> history;
     private String owner;
+    private boolean validFlag = false;
     
     public Wallet(String owner){
         this.balance = 0;
@@ -15,5 +16,11 @@ public class Wallet {
         return this.balance;
     }
 
+    public boolean validateTransaction(Transaction transaction) {
+        if(transaction.getAmount() != 0 && transaction.getAmount() + this.balance >= 0) {
+            validFlag = true;
+        }
+        return validFlag;
+    }
 
 }
