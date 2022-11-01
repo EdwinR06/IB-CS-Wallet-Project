@@ -33,4 +33,15 @@ public class Wallet {
         return addTrans;
     }
 
+    public void printHistory() {
+        System.out.println(this.owner + "'s Transactions\n");
+
+        for (int i = 0; i < this.history.size(); i++) {
+            System.out.println("Transaction " + (i+1));
+            System.out.println("Amount: $" + this.history.get(i).getAmount());
+            System.out.println("Note: " + this.history.get(i).getNote());
+            System.out.println("");
+        }
+    }
+
 }
