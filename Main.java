@@ -1,5 +1,3 @@
-import java.nio.channels.NonWritableChannelException;
-
 public class Main {
     public static void main(String[] args){
         Wallet myWallet = new Wallet("Edwin");
