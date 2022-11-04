@@ -19,7 +19,7 @@ public class Wallet {
         return this.owner;
     }
 
-    public boolean validateTransaction(Transaction transaction) {
+    private boolean validateTransaction(Transaction transaction) {
         boolean validFlag = false;
         if(transaction.getAmount() != 0 && transaction.getAmount() + this.balance >= 0) {
             validFlag = true;
