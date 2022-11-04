@@ -15,6 +15,10 @@ public class Wallet {
         return this.balance;
     }
 
+    public String getOwner() {
+        return this.owner;
+    }
+
     public boolean validateTransaction(Transaction transaction) {
         boolean validFlag = false;
         if(transaction.getAmount() != 0 && transaction.getAmount() + this.balance >= 0) {
