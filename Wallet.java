@@ -49,6 +49,6 @@ public class Wallet {
     }
     
     public void printBalance(){
-        System.out.println(this.getBalance());
+        System.out.println("Current balance: $" + this.balance);
     }
 }
