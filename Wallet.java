@@ -47,5 +47,8 @@ public class Wallet {
             System.out.println("");
         }
     }
-
+    
+    public void printBalance(){
+        System.out.println(this.getBalance());
+    }
 }
