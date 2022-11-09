@@ -2,7 +2,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-import java.beans.Transient;
 public class TestAssertionsTransaction {
     @Test
     public void testAssertionsTransaction() {
